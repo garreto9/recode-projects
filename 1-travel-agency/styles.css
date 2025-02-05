@@ -1,0 +1,117 @@
+/* Estilo Geral */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s;
+}
+
+.navbar.scrolled {
+    background-color: #000;
+}
+
+/* Principal */
+.hero {
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.search-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Preços */
+.price {
+    font-size: 2rem;
+    color: #007bff;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+/* Contato */
+.contact-info {
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #007bff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+    }
+    
+    .search-box {
+        padding: 1rem;
+    }
+}
